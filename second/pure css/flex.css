@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed&display=swap');
+body{
+background: #05142A;
+color: #fff !important;
+overflow-x: hidden;
+margin: 0;
+}
+
+/*RULES*/
+li{
+	list-style-type: none;
+}
+
+*::placeholder{
+	color: var(--main-color);
+}
+input:focus{
+	border: 2px solid #FF9B00 !important;
+}
+/**/
+
+*:before,
+*:after,
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	transition: all .3s;
+	color: #ccc;
+}
+
+:root{
+	--menu-foz:  18px;
+	--main-foz:  20.6px;
+	--main-small-foz:  14px;
+	--main-color: #FF9B00 !important;
+	--main-ff: 'Ubuntu Condensed', sans-serif;
+	--border: 1px solid #FF9B00 !important;
+}
+
+.all{
+	max-width: 1800px;
+	margin: 0 auto;
+}
+.content{
+	width: 100%;
+	display: flex;
+	height: 100%;	
+}
+
+.container{
+	background: #00123a;
+	width: 100%;
+	min-height: 100%;
+
+}
+
+.sidebar{
+	min-height: 100%;
+	background: #213123;
+	width: 300px;
+	margin-left: -220px;
+}
+
+.active.sidebar{
+	margin-left: 0px;
+    transition: all 150ms linear;
+}
+
+.active.section{
+	margin-left: 220px;
+    transition: all 150ms linear;
+}
+
+/*navbar*/
+
+.navbar{
+	width: 100%;
+	background: #0A0B0D;
+	align-items: center;
+	display: flex;
+}
+
+.logo img{
+	margin-left: 20px;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	box-shadow: 1px 1px 10px 3px red;
+}
+
+.title{
+	font-family: var(--main-ff);
+	margin-left: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-grow: 0;
+	line-height: 18px;
+	padding: 15px 0;
+	flex-shrink: 0;
+	letter-spacing: 1px;
+	font-weight: 700;
+}
+
+.title span:nth-child(1){
+	color: #fff;
+	font-size: var(--main-foz);
+}
+
+.title span:nth-child(2){
+	color: #ccc;
+	font-size: var(--main-small-foz);
+}
+
+
+.navbar .menu{
+	margin-left: 50px;
+	display: flex;
+}
+
+.menu .nav-link{
+	font-weight: 700;
+	padding: 13px;
+	color: #ccc;
+	font-size: var(--menu-foz);
+	font-family: var(--main-ff);
+	text-transform: uppercase;
+}
+
+.menu .nav-link i{
+	margin-right: 6px;
+}
+
+.searchbox .search{
+	background: black;
+	border: 2px solid #ccc;
+	padding: 6px;
+	min-width: 220px;
+}
+
+
+
+/**/
+.navbar .btn{
+	display: none;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/*#toggle*/
+.toggle-btn{
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	bottom: 20px;
+	left: 13px;
+	border-radius: 50%;
+
+}
+

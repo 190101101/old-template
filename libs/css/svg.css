@@ -1,0 +1,31 @@
+.icon{
+	width: 25px;
+	height: 25px;
+	padding: 0;
+	margin: 0;
+	margin-right: 20px;
+	transition: .2s;
+}
+
+
+.icon:hover{
+	transition: .2s;
+	transform: scale(1.3);
+}
+
+
+.icon-2{
+	width: 18px;
+	height: 18px;
+	padding: 0;
+	margin: 0;
+	margin-right: 4px;
+	transition: .2s;
+}
+
+
+.icon-2:hover{
+	transition: .2s;
+	transform: scale(1.3);
+}
+

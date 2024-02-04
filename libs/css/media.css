@@ -1,0 +1,552 @@
+@media screen and (max-width: 1230px ) {
+  .inner-row-2 {
+    display: none;
+  }
+
+
+  
+}
+
+@media screen and (min-width: 1300px ) {
+  .inner-row-2 {
+    display: none;
+  }
+
+	#pag-div-2{
+		margin-left: 250px;
+	}
+
+
+}
+
+@media screen and (max-width: 1367px ) {
+
+	#section-sidebar{
+	  	display: none;
+	  }
+}
+
+
+
+
+@media screen and (max-width: 1200px ) {
+	.card{
+		min-width: 100%;
+		overflow: hidden;
+		max-height: 750px;
+		background-color: #080C0F !important;
+		margin-top: 20px;
+	}
+
+	#pagination{
+		margin-left: -50px;
+	}
+
+}
+
+
+@media screen and (min-width: 990px ) {
+
+	#slide-row{
+		display: none;
+	}
+
+}
+
+
+@media screen and (max-width: 768px ) {
+
+	#pagination{
+		display: none;
+	}
+
+	.navbar{
+		text-align: center;
+	}
+
+	#pagination .container .row .block{
+		display: none;
+	}
+
+}
+
+
+
+@media screen and (min-width: 1367px ) {
+	#sidebar .hamburger{
+		display: none;
+	}
+
+	#wrapper{
+		margin-bottom: 0;
+		display: flex;
+	}
+
+	#section{
+		width: 75%;
+	}
+
+	#section-sidebar{
+		min-height: 900px;
+		width: 330px;
+		z-index: 102;
+		max-height: 100%;
+		background-color: #1f2326;
+	   transition: all 150ms linear;
+	 	overflow-x: hidden;
+	}
+
+	#section-sidebar ul{
+		padding: 0;
+		margin: 0;
+	}
+
+	#section-sidebar ul li{
+		color: #fff;
+		list-style: none;
+		padding: 10px 10px;
+		background-color: #22242A;
+		font-family: 'Ubuntu Condensed', sans-serif;
+		font-size: 18px;
+		transition: color .3s linear;
+		padding-left: 20px;
+
+	}
+
+	#section-sidebar ul li:hover{
+		background-color: #111516;
+		color: #FF9B00;
+		cursor: pointer;
+		transition: color .3s linear;
+	}
+
+	#section-sidebar .nav-item {
+		color: #fff;
+		text-transform: uppercase;
+		padding-left: 20px;
+		transition: color .2s linear;
+		font-size: 14px;
+
+	}
+
+
+	#section-sidebar .nav-item .float-right{
+		font-size: 12px;
+		opacity: .7;
+		color: #ccc;
+		transition: color .2s linear;
+	}
+
+	#section-sidebar .nav-item:hover .float-right{
+		color: #FF9B00 !important;
+		transition: color .2s linear;
+	}
+
+	#section-sidebar .nav-item:hover{
+		background-color: #111516;
+		color: #FF9B00 !important;
+		transition: color .2s linear;
+	}
+
+	#section-sidebar ul li .k{
+		color: #8ac832;
+	}
+
+	#section-sidebar li .span{
+		width: 15px;
+		height: 15px;
+		background-color: #2E3139;
+		position: absolute;
+		border-radius: 50%;
+		right: 20px;
+		transition: background-color .2s linear;
+	}
+
+	#section-sidebar ul li:hover .span{
+		background-color: #FF6400 !important;
+		transition: background-color .2s linear;
+
+	}
+
+	#section-sidebar .search {
+		width: 220px;
+	}
+
+	#section-sidebar #search button{
+	}
+
+	#section-sidebar #search i {
+		font-size: 20px;
+	}
+
+
+	#online{
+		margin-top: 50px;
+	}
+
+	#online thead tr th{
+		padding-left: 20px;
+
+	}
+
+	#online tbody tr td{
+		padding-left: 20px;
+
+	}
+
+	#online thead{
+		font-size: 20px;
+
+	}
+
+	#online tbody{
+		font-size: 10px;
+
+	}
+
+
+	#online .text-muted{
+		font-size: 11px;
+
+	}
+
+	.table-dw{
+		color: #0064FF;
+	}.table-fl{
+		color: #FF9000;
+	}.table-on{
+		color: #02AA0A;
+	}
+
+	.pulse-1, .pulse-2, .pulse-3{
+		margin-right: -10px;
+	}
+		
+
+	/**/
+
+	#pagination {
+		margin-bottom: 250px;
+		margin-left: -100px;
+	}
+
+		#pagination .page .text-center{
+			margin-left: 170px;
+		}
+
+
+
+	#side-search ~ hr{
+		margin-left: 20px;
+		width: 40%;
+		height: 3px;
+		background-image: linear-gradient(to right , #ffd300, #f8aa00, #ec8200, #dc5800, #c6270d);
+	}
+
+	#right-accordionExample{
+		margin-top: -30px;
+	}
+
+
+/**/
+	#side-online, #side-rec{
+		margin-top: 60px;
+		margin-left: 20px;
+		font-family: 'Ubuntu Condensed', sans-serif;
+		font-weight: bold;
+		font-size: 25px;
+		color: #fff;
+		line-height: 10px;
+		opacity: .7;
+	}
+
+	#side-online ~ hr{
+		margin-left: 20px;
+		width: 40%;
+		height: 3px;
+		background-image: linear-gradient(to right , #ffd300, #f8aa00, #ec8200, #dc5800, #c6270d);
+	}
+	#side-rec ~ hr{
+		margin-left: 20px;
+		width: 30%;
+		height: 3px;
+		background-image: linear-gradient(to right , #ffd300, #f8aa00, #ec8200, #dc5800, #c6270d);
+	}
+/**/
+	
+	#chat{
+		display: flex;
+		background: #27292f;
+		width: 100%;
+		min-height: 300px;
+		max-height: 600px;
+		box-shadow: 0 3px 20px rgba(0,0,0,.25), inset 0 5px 50px rgba(0, 0, 0, 0.5), 0 3px 0px rgba(0,0,0,.4);
+	}
+
+
+	.inner-chat .media{
+		padding-left: 10px;
+	}
+
+	.inner-chat img{
+		margin-top: 15px;
+		border-radius: 3px;
+		box-shadow: 1px 1px 10px 1px black;
+	}
+
+	.chat-block{
+		width: 100%;
+	}
+
+	.media .float-right{
+		color: #ccc;
+		font-size: 10px;
+		margin-top: 3px;
+		margin-right: 15px;
+	}
+
+	.media .chat-block {
+		font-family: 'Ubuntu Condensed', sans-serif;
+		color: #ccc;
+		font-size: 14px;
+		width: 100%;
+		width: 260px;
+	}
+
+	.media .us-name{
+		color: #3573D1;
+	}
+
+	.media hr{
+		margin-bottom: 7px;
+		margin-top: 5px;
+		border: .4px dashed #0F5E5B;
+	}
+
+	.media-time{
+		margin-top: 0;
+		top: 0;
+	}
+
+	#msg-chat{
+		display: flex;
+		width: 100%;
+		margin-top: 8px;
+		padding-left: 8px;
+	}
+
+	#msg-chat .chat-area{
+		padding: 5px;
+		resize: none;
+		width: 60%;
+		height: 55px;
+		background: #1f2326;
+		border: 3px solid #191A1E;
+		border-right: none;
+		color: #ccc;
+		overflow-x: hidden;
+ 		overflow-y: scroll;
+	}
+	#msg-chat .chat-area::placeholder{
+		color: #ccc;
+	}
+
+	#msg-chat .chat-area::-webkit-scrollbar {
+   width: 6px;
+	}
+
+	#msg-chat .chat-area::-webkit-scrollbar-track{
+	   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	}
+
+
+	#msg-chat .chat-area::-webkit-scrollbar-thumb {
+		background-image: linear-gradient(to right top, #370505, #3d021b, #3d062d, #331241, #171f53);
+	  outline: 1px solid red;
+	}
+
+
+	#msg-chat button{
+		padding: 13px 10px;
+		background: #27292f;
+		color: #6B6666;
+		border: 3px solid #191A1E;
+		margin-right: 3px;
+		border-left: none;
+	}
+
+	#chat-btn{
+		width: 20%;
+	}
+
+	#chat-btn button{
+		padding: 13px 8px;
+		background: #27292f;
+		color: #6B6666;
+		border: 3px solid #191A1E;
+	}
+
+	#msg-chat #chat-btn .ct-btn-1{
+	margin-right: 3px;
+	}
+
+	#msg-chat #chat-btn .ct-btn-3{
+		margin-left: -3px;
+	}
+
+
+	#chat-btn button i{
+		font-size: 20px;
+	}
+
+	/**/
+
+	#chat{
+		overflow-x: hidden;
+	 	overflow-y: scroll;
+	}
+
+	#chat::-webkit-scrollbar {
+	   width: 8px;
+	}
+
+	#chat::-webkit-scrollbar-track{
+	   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	   border-radius: 15px;
+
+	}
+
+
+	#chat::-webkit-scrollbar-thumb {
+	  background-image: linear-gradient(to  top, #000000, #2f2e2e, #5a5958, #8a8886, #bbbbb8);
+	  outline: 1px solid slategrey;
+	   border-radius: 15px;
+	}
+
+
+	/*REC*/
+
+	#rec{
+		overflow-x: hidden;
+ 		overflow-y: scroll;
+		margin-bottom: 70px;
+		background-color: #080C0F !important;
+		height: 460px;
+		padding: 10px;
+		display: flex;
+		flex-wrap: wrap;
+		background: url('../file/img/rec.png')repeat-x ;
+	}
+
+	#rec::-webkit-scrollbar {
+   width: 6px;
+	}
+
+	#rec::-webkit-scrollbar-track{
+	   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	}
+
+
+	#rec::-webkit-scrollbar-thumb {
+		background-image: linear-gradient(to right top, #051937, #181b40, #2c1c47, #3f1b4b, #53174b);
+	  outline: 1px solid slategrey;
+	}
+
+
+	#rec-box1{
+		width: 10%;
+	}
+	
+	#rec-box1{
+		width: 40px;
+		border-radius: 50%;
+		margin-right: 10px;
+	}
+	#rec-box1 img{
+		border-radius: 50%;
+		height: 40px;
+		width: 40px;
+		transition: .3s;
+		box-shadow: 1px 1px 10px 3px red;
+	}
+
+	#rec-box1 img:hover{
+	box-shadow: 1px 1px 10px 6px red;
+	transform: scale(1.3);
+	transition: .3s;
+}
+
+
+	#rec-box2{
+		width: 83%;
+	}
+
+	#rec .rec-link{
+		letter-spacing: 1px;
+		color: #4ab3f4;
+		font-family: consolas;
+		font-size: 13px;
+	}
+
+	#rec .rec-span{
+		font-size: 10px;
+		font-family: consolas;
+	}
+
+	#rec-box3{
+		line-height: 15px;
+	}
+
+	#rec .rec-text{
+		margin-top: 6px;
+		font-size: 13px;
+		color: #ccc;
+	}	
+
+	#rec .rec-text i{
+		color: yellow;
+	}
+
+
+	#rec .rec-text2 a{
+		font-size: 11px;
+		font-family: consolas;
+		color: #ccc;
+	}
+
+
+	#rec .rec-text3 a{
+		font-size: 14px;
+		font-family: consolas;
+	}
+
+	#rec .rec-text4{
+		font-size: 12px;
+		font-family: consolas;
+		color: #ccc;
+	}
+
+	#rec .rec-text5{
+		margin-top: 10px;
+		font-size: 12px;
+		font-family: consolas;
+		color: #ccc;
+	}
+
+	
+	#rec-box4{
+		width: 100%;
+		height: 200px;
+		min-height: 100px;
+		background: url("../file/img/recc.jpg")no-repeat center;
+		background-size: cover;
+		border-bottom: 1px dashed green;
+		margin-bottom: 20px;
+	}
+
+
+
+
+
+
+}

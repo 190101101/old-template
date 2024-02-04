@@ -1,0 +1,744 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="libs/css/style.css">
+  <link rel="stylesheet" type="text/css" href="libs/css/main.css">
+  <link rel="stylesheet" type="text/css" href="libs/css/menu.css">
+  <link rel="stylesheet" type="text/css" href="libs/css/pag.css">
+  <link rel="stylesheet" type="text/css" href="libs/css/pulse.css">
+  <link rel="stylesheet" type="text/css" href="libs/css/media.css">
+  <link rel="stylesheet" type="text/css" href="libs/css/svg.css">
+  <link rel="stylesheet" type="text/css" href="libs/css/color.css">
+  <link rel="stylesheet" type="text/css" href="libs/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+
+
+ <!--     <div id="sound">
+        <audio id="duckSound" src="libs/audio/duck.mp3"></audio>
+        <audio id="fuvSound" src="libs/audio/fuv.mp3"></audio>
+        <audio id="lircSound" src="libs/audio/lirc.m4a"></audio>
+        <audio id="jumpSound1" src="libs/audio/jump1.wav"></audio>
+        <audio id="jumpSound2" src="libs/audio/jumping.wav"></audio>
+        <audio id="jumpSound3" src="libs/audio/jump3.wav"></audio>
+        <audio id="jumpSound4" src="libs/audio/jump4.mp3"></audio>
+        <audio id="cote" src="libs/audio/cote.mp3"></audio>
+        <audio id="openMenu" src="libs/audio/open.mp3"></audio>
+        <audio id="oneSound" src="libs/audio/one.mp3"></audio>
+        <audio id="twoSound" src="libs/audio/two.mp3"></audio>
+        <audio id="threeSound" src="libs/audio/three.mp3"></audio>
+        <audio id="closeMenu" src="libs/audio/close.mp3"></audio>
+        <audio id="bdsSound" src="libs/audio/bds.m4a"></audio>
+        <audio id="elektrikSound" src="libs/audio/elektrik.mp3"></audio>
+        <audio id="flameSound" src="libs/audio/flame.mp3"></audio>
+        <audio id="rodSound1" src="libs/audio/rod1.mp3"></audio>
+        <audio id="rodSound2" src="libs/audio/rod2.mp3"></audio>
+        <audio id="rodSound3" src="libs/audio/rod3.mp3"></audio>
+        <audio id="humSound1" src="libs/audio/hum.mp3"></audio>
+        <audio id="sabrSound1" src="libs/audio/SlowSabr.mp3"></audio>
+        <audio id="swingSound1" src="libs/audio/Swing.mp3"></audio>
+        <audio id="swingSound2" src="libs/audio/Swing2.mp3"></audio>
+    </div> -->
+
+    <div id="navbar">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-navbar text-center">
+            <span class="navbar-brand" id="audio">
+              <a href="index.html">
+               <img onmouseover="cotemyrr(this)" src="libs/file/img/profile.jpeg"> 
+              </a>
+            </span>
+            <div class="s">
+             <span class="s-1">
+                КЛОНДАЙК ПРОГРАММИСТА
+              </span>
+              <span class="s-2">
+                ПИРАТСКАЯ БУХТА ДЛЯ РАЗРАБОТЧИКОВ
+              </span>
+            </div>
+            <button class="navbar-toggler" data-toggle="collapse" type="button" data-target="#navmenu">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ml-5" id="navmenu">
+              <ul class="navbar-nav mr-auto" >
+                <li class="nav-item">
+                  <a onmouseover="jump3(this)" href="#" class="nav-link menu-nav-link">
+                  <i class="fas fa-heart mr-1"></i> топ-100</a>
+                </li>
+                <li class="nav-item">
+                  <a onmouseover="fuv(this)" href="#" class="nav-link">Подборки софта</a>
+                </li>
+                <li class="nav-item">
+                  <a onmouseover="jump2(this)" href="#" class="nav-link">
+                    <i class="fab fa-youtube mr-1"></i>наш youtube</a>
+                </li>
+                <li class="nav-item">
+                  <a onmouseover="jump1(this)" href="#" class="nav-link">
+                    <i class="fab fa-telegram mr-1"></i>наш telegram</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </div>       
+
+	   <div id="sidebar">
+     <div class="hamburger hamburger--elastic toggle-btn" onclick="toggleSidebar()" onmousedown="swing1(this)" onmouseleave="swing2(this)" >
+        <div class="hamburger-box ">
+          <div class="hamburger-inner"></div>
+        </div>
+      </div>
+
+      <div id="online" onmouseover="sabr1(this)">
+        <div class="row">
+          <div class="col-lg-12">
+            <table>
+              <thead>
+                <tr>
+                  <th><span class="pulse-1"></span></th>
+                  <th class="table-on">339</th>
+                  <th><span class="pulse-2"></span></th>
+                  <th class="table-fl">422</th>
+                  <th><span class="pulse-3"></span></th>
+                  <th class="table-dw">3,008,416</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                    <td></td>
+                  <td class="text-muted">Онлайн</td>
+                    <td></td>
+                  <td class="text-muted">файлов</td>
+                    <td></td>
+                  <td class="text-muted">скачиваний</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+       </div>
+      </div>
+
+      <div id="category">
+        <p >категории</p>
+             <hr>
+      </div>
+      <div class="accordion" id="accordionExample">
+        <ul>
+          <li onmouseover="jump4(this)" class="btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <img id="svg" src="libs/sprite/flame.svg" alt="">
+          <span class="k">КИБЕР</span><span>БЕЗОПАСНОСТЬ</span><span class="span"></span></li>
+            <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample">
+              <a onmouseover="one(this)" href=""><li class="nav-item">Софт <span class="float-right">Взлом/обходи</span></li></a>
+              <a onmouseover="two(this)" href=""><li class="nav-item">База данных<span class="float-right">Брут/спам/брут </span></li></a>
+          
+            </div>
+        </ul> 
+
+        <ul>
+          <li onmouseover="jump2(this)" class=" btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+             <img id="svg" src="libs/sprite/windows.svg" alt="">СОФТ ДЛЯ WINDOWS <span class="span"></span></li>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <a onmouseover="one(this)" href=""><li class="nav-item">Внешний вид <span class="float-right">Рабочий стол/Украшения </span></li></a>
+              <a onmouseover="two(this)" href=""><li class="nav-item">Медиа <span class="float-right">Аудио/видео/фото </span></li></a>
+              <a onmouseover="three(this)" href=""><li class="nav-item">Система  <span class="float-right">Ускорители/Оптимизаторы </span></li></a>
+              <a onmouseover="one(this)" href=""><li class="nav-item">Безопасность <span class="float-right">Антивирусы/сканеры </span></li></a>
+              <a onmouseover="two(this)" href=""><li class="nav-item">Для программиста <span class="float-right">Редакторы/Эмуляторы </span></li></a>
+              <a onmouseover="three(this)" href=""><li class="nav-item">Создания игр <span class="float-right">Движки/Конструкторы </span></li></a>
+              <a onmouseover="one(this)" href=""><li class="nav-item">Разное <span class="float-right">Все Остальные </span> </li></a>
+            </div>
+        </ul>
+
+        <ul>
+          <li onmouseover="jump3(this)" class=" btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+            <img id="svg" src="libs/sprite/html.svg" alt="">РАЗРАБОТЧИКУ <span class="span"></span></li>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <a onmouseover="one(this)" href=""><li class="nav-item">HTML/CSS<span class="float-right">Шаблоны </span></li></a>
+              <a onmouseover="two(this)" href=""><li class="nav-item">PHP/MYSQL<span class="float-right">скрипты </span></li></a>
+              <a onmouseover="three(this)" href=""><li class="nav-item">JAVASCRIPT<span class="float-right">Скрипты/эффекты </span></li></a>
+              <a onmouseover="one(this)" href=""><li class="nav-item">PSD Макеты <span class="float-right">Для тренировки </span></li></a>
+            </div>
+        </ul>
+
+        <ul>
+          <li onmouseover="jump4(this)" class=" btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+             <img id="svg" src="libs/sprite/ps.svg" alt="">ДИЗАЙН <span class="span"></span></li>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+              <a onmouseover="one(this)" href=""><li class="nav-item">Изображения<span class="float-right">Паки</span></li></a>
+              <a onmouseover="two(this)" href=""><li class="nav-item">Иконки<span class="float-right">Подборки</span></li></a>
+              <a onmouseover="three(this)" href=""><li class="nav-item">Шрифты<span class="float-right">Лучшие</span></li></a>
+              <a onmouseover="one(this)" href=""><li class="nav-item">Мокапы<span class="float-right">для /PHOTOSHOP</span></li></a>
+              <a onmouseover="two(this)" href=""><li class="nav-item">GFX<span class="float-right">для /PHOTOSHOP</span></li></a>
+            </div>
+        </ul>
+
+        <ul>
+          <li onmouseover="jump3(this)" class=" btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+            <img id="svg" src="libs/sprite/book.svg" alt="">КНИГИ <span class="span"></span></li>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+              <a onmouseover="one(this)" href="book.html"><li class="nav-item">Программисту <span class="float-right">Учебники </span></li></a>
+              <a onmouseover="two(this)" href=""><li class="nav-item">Хакеру <span class="float-right">Литература </span></li></a>
+              <a onmouseover="three(this)" href=""><li class="nav-item">Разные книги<span class="float-right">Все Остальное </span></li></a>
+            </div>
+        </ul>
+
+        <ul>
+          <li onmouseover="jump1(this)" class=" btn-link" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+          <img id="svg" src="libs/sprite/other.svg" alt="">Другое</li>
+            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+              <!-- <li></li> -->
+            </div>
+        </ul>
+      </div>
+
+        <p id="side-search">Поиск</p>
+          <hr>
+        <div id="search">
+          <form>
+            <input onmousedown="fuv(this)" type="search" class="searchbox-side search" placeholder="Что ищем?...вкладки, chrome,psd">
+            <button class="search-btn-hover"><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+
+      <div id="side-not">
+        <div class="triangle text-center">
+           Lorem ipsum <a href="#">УВЕДОМЛЕНИЯ</a> sit amet, consectetur adipisicing elit. Et perspiciatis 
+          repudiandae quidem alias enim nam! Eveniet eius odit, officia neque ea 
+        </div>
+         <i class="far fa-paper-plane"></i>
+      </div>
+
+          <div id="side-not-under-2">
+            <div class="text-center">
+              <p>TELEGRAM канал</p>
+              <p class="mb-5">๖ۣۜКлондайк программиста</p>
+            </div>
+            <div>
+              <span class="text-muted">v0.4 codename</span>
+              <span>«Evolution»</span>
+            </div>
+          </div>
+   </div>
+
+  <div id="wrapper">
+
+  	<section id="section" >
+      <div class="container" id="content">
+      	 <div id="search">
+          <form align="right">
+            <input onmousedown="fuv(this)" type="search" class="searchbox search" placeholder="Что ищем?...вкладки, chrome,psd">
+            <button class="search-btn-hover"><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+        <!--  -->  
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="img-fluid w-100" src="https:via.placeholder.com/800x330/00000FF"><!-- d-block -->
+                </div>
+                <div class="carousel-item">
+                  <img class="img-fluid w-100" src="https:via.placeholder.com/800x330/000FF00">
+                </div>
+                <div class="carousel-item">
+                  <img class="img-fluid w-100" src="https:via.placeholder.com/800x330/FF00000">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+              </a>
+            </div>
+          </div>
+          <div class="container">
+            <!--  -->
+            <div class="container">
+              <div class="row" id="slide-row">
+                <div class="col-lg-2 col-md-4 col-sm-4" id="after-row-body-slider">
+                  <a href=""><span>Описания</span></a>
+                </div>
+                 <div class="col-lg-2 col-md-4 col-sm-4 second-down" id="after-row-body-slider">
+                  <button class="btn btn-default">
+                    <i class="fas fa-download mr-2 text-muted"></i><span>СКАЧАТЬ</span><span class="text-muted"> (12 MB)</span>
+                  </button>
+
+                </div>   
+                 <div class="col-lg-2 col-md-4 col-sm-4" id="after-row-body-slider">
+                  <a href=""><span>Комментарии</span></a>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="col-lg-12" id="under-slider" onmouseover="hum1(this)">
+              <div class="row-header">
+                <p>Fences - Группировка иконок рабочего стола</p>
+                  <span class="text-muted"> Опубликовано 08.05.2018</span>
+                  <svg class="icon-2 ml-3"><use xlink:href="libs/sprite/sprite.svg#windows"></use></svg>
+                  <span class="text-muted down" onmouseover="elektrik(this)">Внешний вид </span>
+                  <i class="fas fa-download ml-2 text-muted"></i>
+                  <span id="row-down" class="text-muted ml-1 down" onmouseover="elektrik(this)">23,028 скачивания</span>
+              </div>
+           
+
+              <div class="row-body">
+                <div>
+                  <p class="w-75">
+                    <strong class="text-info">Fences </strong><span>- это программа при помощи которой Вы сможете группировать иконки на рабочем столе. Помимо этого, прога позволяет легко настроить внешний вид рабочего стола. А сгруппированные иконки можно располагать и настраивать вообще как угодно!</span>
+                  </p>
+                </div>
+                <div class="row">
+                  <div class="col-lg-2"></div>
+                  <div class="col-lg-8">
+                    <p class="text-center">Кстати, недавно известный ютубер <strong class="text-danger">Mr. Marmok</strong> оформил свой рабочий стол именно этой программой</p>
+                    <img src="https:via.placeholder.com/800x130/00000FF" class="img-fluid mb-4"><hr id="img-hr">
+                    <div>
+                     <strong>Он оформил свой <span>рабочий стол</span>  вот так:</strong>
+                    <img src="https:via.placeholder.com/800x500/00000FF" class="img-fluid my-4"><hr id="img-hr">
+                    </div>
+                  </div>
+                  <div class="col-lg-2"></div>
+                </div>
+                <div class="p-1">
+                  <p class="mb-4">Кроме того Fences позволяет делать скриншоты экрана и производить автоматическое масштабирование (изменение размеров экрана). Всё это позволяет организовать иконки на рабочем столе как угодно!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="col-lg-12" id="after-row-body">
+              <i class="fas fa-download mr-2 text-muted"></i>
+              <span>СКАЧАТЬ</span>
+            </div>
+            <div class="col-lg-12" id="after-row-body-2">
+              <div class="btn-group btn-group-lg" role="group">
+                <button class="btn btn-success"><i class="fas fa-download ml-2 text-muted"></i></button>
+                <button class="btn btn-dark"><span>СКАЧАТЬ</span><p class="text-muted">Размер файла 12MB</p></button>
+              </div>
+            </div>
+             <div class="col-lg-12" id="after-row-body-3">
+              <i class="fas fa-rss mr-2"></i>
+              <span>РЕКЛАМНЫЕ ССЫЛКИ</span>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="col-lg-12" id="after-row-body-down">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="t-1"></td>
+                    <td class="t-2">• Хостинг Ukraine - Качественный хостинг, лучший в соотношении цена/качество</td>
+                  </tr>
+                  <tr>
+                    <td class="empty-td"><span></span></td>
+                  </tr>
+                  <tr>
+                    <td class="t-1"></td>
+                    <td class="t-2">• ТОП 70 программ для Windows за всё время!</td>
+                  </tr>
+                  <tr>
+                    <td class="empty-td"><span></span></td>
+                  </tr>
+                  <tr>
+                    <td class="t-1"></td>
+                    <td class="t-2">• Как ускорить интернет до предела?</td>
+                  </tr>  
+                  <tr>
+                    <td class="empty-td"><span></span></td>
+                  </tr>
+                  <tr>
+                    <td class="t-1"></td>
+                    <td class="t-2">• ТОП 70 программ для Windows за всё время!</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="col-lg-12" id="after-row-body-4">
+              <i class="fas fa-download mr-2 text-muted"></i>
+              <span>ПОХОЖИЕ МАТЕРИАЛЫ</span>
+            </div>
+
+            <div class="col-lg-12" id="after-row-body-down">
+
+           <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card">
+                  <div class="row">
+                    <div class="col-lg-5 col-sm-12 col-md-12">
+                        <img src="https:via.placeholder.com/800x500/00000FF" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-7 col-sm-12 col-md-12">
+                      <div class="row-header">
+                        <p>Fences - Группировка иконок рабочего стола</p>
+                        <span class="text-muted">08.05.2018</span>
+                        <svg class="icon-2 ml-3"><use xlink:href="libs/sprite/sprite.svg#windows"></use></svg>
+                        <span class="text-muted">Внешний вид </span>
+                        <i class="fas fa-download ml-2 text-muted"></i>
+                        <span id="row-down" class="text-muted ml-1 down" onmouseover="elektrik(this)">23,028 скачивания</span>
+                      </div>
+                      <div class="row-body">
+                        Если на рабочем столе беспорядок, <strong class="text-info">Fences</strong> - это программа, которая вам нужна.
+                        Она позволяет организовать ваш рабочий стол так, как вы никогда его не видели.
+                        Именно этой прогой <strong class="text-warning">Marmok</strong> сделал себе рабочий стол.
+                      </div>
+                      <div class="row-footer mt-5">
+                        <div>
+                          <a href="post.html"><button class="btn btn-1 float-right ml-1 mr-3">подробнее </button></a>
+                          <button class="btn btn-2 float-right mb-1">Скачать <b class="badge badge-secondary text-dark">12 MB</b> </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="row">
+                    <div class="col-lg-5 col-sm-12 col-md-12">
+                        <img src="https:via.placeholder.com/800x500/00000FF" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-7 col-sm-12 col-md-12">
+                      <div class="row-header">
+                        <p>Fences - Группировка иконок рабочего стола</p>
+                        <span class="text-muted">08.05.2018</span>
+                        <svg class="icon-2 ml-3"><use xlink:href="libs/sprite/sprite.svg#windows"></use></svg>
+                        <span class="text-muted">Внешний вид </span>
+                        <i class="fas fa-download ml-2 text-muted"></i>
+                        <span id="row-down" class="text-muted ml-1 down" onmouseover="elektrik(this)" >23,028 скачивания</span>
+                      </div>
+                      <div class="row-body">
+                        Если на рабочем столе беспорядок, <strong class="text-info">Fences</strong> - это программа, которая вам нужна.
+                        Она позволяет организовать ваш рабочий стол так, как вы никогда его не видели.
+                        Именно этой прогой <strong class="text-warning">Marmok</strong> сделал себе рабочий стол.
+                      </div>
+                      <div class="row-footer mt-5">
+                        <div>
+                          <a onmouseover="rod1(this)" href="post.html"><button class="btn btn-1 float-right ml-1 mr-3">подробнее </button></a>
+                          <button onmouseover="rod2(this)" class="btn btn-2 float-right mb-1">Скачать <b class="badge badge-secondary text-dark">12 MB</b> </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="row">
+                    <div class="col-lg-5 col-sm-12 col-md-12">
+                        <img src="https:via.placeholder.com/800x500/00000FF" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-7 col-sm-12 col-md-12">
+                      <div class="row-header">
+                        <p>Fences - Группировка иконок рабочего стола</p>
+                        <span class="text-muted">08.05.2018</span>
+                        <svg class="icon-2 ml-3"><use xlink:href="libs/sprite/sprite.svg#windows"></use></svg>
+                        <span class="text-muted">Внешний вид </span>
+                        <i class="fas fa-download ml-2 text-muted"></i>
+                        <span id="row-down" class="text-muted ml-1 down" onmouseover="elektrik(this)">23,028 скачивания</span>
+                      </div>
+                      <div class="row-body">
+                        Если на рабочем столе беспорядок, <strong class="text-info">Fences</strong> - это программа, которая вам нужна.
+                        Она позволяет организовать ваш рабочий стол так, как вы никогда его не видели.
+                        Именно этой прогой <strong class="text-warning">Marmok</strong> сделал себе рабочий стол.
+                      </div>
+                      <div class="row-footer mt-5">
+                        <div>
+                          <a  href="post.html"><button class="btn btn-1 float-right ml-1 mr-3">подробнее </button></a>
+                          <button  class="btn btn-2 float-right mb-1">Скачать <b class="badge badge-secondary text-dark">12 MB</b> </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            </div>
+
+             <div class="col-lg-12" id="after-row-body-4">
+              <i class="fas fa-comment"></i>
+              <span>КОММЕНТАРИИ</span>
+            </div>
+          </div>
+
+           <div class="container">
+           <div class="col-lg-12" id="after-row-body-down">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum ex amet dolores est repudiandae non sapiente ipsa sunt voluptatum, illo consequuntur omnis, beatae esse, porro a doloremque quibusdam tempore? Quos!
+            </div>
+           
+          </div>
+
+        </div>
+
+
+
+        <!--  -->    
+    	</div>
+  	</section>
+
+    <section id="section-sidebar">
+      <div id="online" onmouseover="sabr1(this)">
+        <div class="row">
+          <div class="col-lg-12">
+            <table>
+              <thead>
+                <tr>
+                  <th><span class="pulse-1"></span></th>
+                  <th class="table-on">339</th>
+                  <th><span class="pulse-2"></span></th>
+                  <th class="table-fl">422</th>
+                  <th><span class="pulse-3"></span></th>
+                  <th class="table-dw">3,008,416</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                    <td></td>
+                  <td class="text-muted">Онлайн</td>
+                    <td></td>
+                  <td class="text-muted">файлов</td>
+                    <td></td>
+                  <td class="text-muted">скачиваний</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div>
+         <p id="side-search">КАТЕГОРИИ</p>
+            <hr>
+          <div id="search">
+            <form>
+              <input onmousedown="fuv(this)" type="search" class="searchbox-side search" placeholder="Что ищем?...">
+              <button class="search-btn-hover"><i class="fas fa-search"></i></button>
+            </form>
+          </div>
+      </div>
+
+        <div class="accordion" id="right-accordionExample">
+          <ul>
+            <li onmouseover="jump4(this)" class="btn-link" data-toggle="collapse" data-target="#right-collapseOne" aria-expanded="true" aria-controls="right-collapseOne">
+            <img id="svg" src="libs/sprite/flame.svg" alt="">
+            <span class="k">КИБЕР</span><span>БЕЗОПАСНОСТЬ</span><span class="span"></span></li>
+              <div id="right-collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#right-accordionExample">
+                <a onmouseover="one(this)" href=""><li class="nav-item">Софт <span class="float-right">Взлом/обходи</span></li></a>
+                <a onmouseover="two(this)" href=""><li class="nav-item">База данных<span class="float-right">Брут/спам/брут </span></li></a>
+            
+              </div>
+          </ul> 
+
+          <ul>
+            <li onmouseover="jump2(this)" class=" btn-link" data-toggle="collapse" data-target="#right-collapseTwo" aria-expanded="true" aria-controls="right-collapseTwo">
+            <img id="svg" src="libs/sprite/windows.svg" alt="">
+              СОФТ ДЛЯ WINDOWS <span class="span"></span></li>
+              <div id="right-collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#right-accordionExample">
+                <a onmouseover="one(this)" href=""><li class="nav-item">Внешний вид <span class="float-right">Рабочий стол/Украшения </span></li></a>
+                <a onmouseover="two(this)" href=""><li class="nav-item">Медиа <span class="float-right">Аудио/видео/фото </span></li></a>
+                <a onmouseover="three(this)" href=""><li class="nav-item">Система  <span class="float-right">Ускорители/Оптимизаторы </span></li></a>
+                <a onmouseover="one(this)" href=""><li class="nav-item">Безопасность <span class="float-right">Антивирусы/сканеры </span></li></a>
+                <a onmouseover="two(this)" href=""><li class="nav-item">Для программиста <span class="float-right">Редакторы/Эмуляторы </span></li></a>
+                <a onmouseover="three(this)" href=""><li class="nav-item">Создания игр <span class="float-right">Движки/Конструкторы </span></li></a>
+                <a onmouseover="one(this)" href=""><li class="nav-item">Разное <span class="float-right">Все Остальные </span> </li></a>
+              </div>
+          </ul>
+
+          <ul>
+            <li onmouseover="jump3(this)" class=" btn-link" data-toggle="collapse" data-target="#right-collapseThree" aria-expanded="true" aria-controls="right-collapseThree">
+            <img id="svg" src="libs/sprite/html.svg" alt="">
+              РАЗРАБОТЧИКУ <span class="span"></span></li>
+              <div id="right-collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#right-accordionExample">
+                <a onmouseover="one(this)" href=""><li class="nav-item">HTML/CSS<span class="float-right">Шаблоны </span></li></a>
+                <a onmouseover="two(this)" href=""><li class="nav-item">PHP/MYSQL<span class="float-right">скрипты </span></li></a>
+                <a onmouseover="three(this)" href=""><li class="nav-item">JAVASCRIPT<span class="float-right">Скрипты/эффекты </span></li></a>
+                <a onmouseover="one(this)" href=""><li class="nav-item">PSD Макеты <span class="float-right">Для тренировки </span></li></a>
+              </div>
+          </ul>
+
+          <ul>
+            <li onmouseover="jump4(this)" class=" btn-link" data-toggle="collapse" data-target="#right-collapseFour" aria-expanded="true" aria-controls="right-collapseFour">
+            <img id="svg" src="libs/sprite/ps.svg" alt="">
+              ДИЗАЙН <span class="span"></span></li>
+              <div id="right-collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#right-accordionExample">
+                <a onmouseover="one(this)" href=""><li class="nav-item">Изображения<span class="float-right">Паки</span></li></a>
+                <a onmouseover="two(this)" href=""><li class="nav-item">Иконки<span class="float-right">Подборки</span></li></a>
+                <a onmouseover="three(this)" href=""><li class="nav-item">Шрифты<span class="float-right">Лучшие</span></li></a>
+                <a onmouseover="one(this)" href=""><li class="nav-item">Мокапы<span class="float-right">для /PHOTOSHOP</span></li></a>
+                <a onmouseover="two(this)" href=""><li class="nav-item">GFX<span class="float-right">для /PHOTOSHOP</span></li></a>
+              </div>
+          </ul>
+
+          <ul>
+            <li onmouseover="jump3(this)" class=" btn-link" data-toggle="collapse" data-target="#right-collapseFive" aria-expanded="true" aria-controls="right-collapseFive">
+            <img id="svg" src="libs/sprite/book.svg" alt="">
+              КНИГИ <span class="span"></span></li>
+              <div id="right-collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#right-accordionExample">
+                <a onmouseover="one(this)" href="book.html"><li class="nav-item">Программисту <span class="float-right">Учебники </span></li></a>
+                <a onmouseover="two(this)" href=""><li class="nav-item">Хакеру <span class="float-right">Литература </span></li></a>
+                <a onmouseover="three(this)" href=""><li class="nav-item">Разные книги<span class="float-right">Все Остальное </span></li></a>
+              </div>
+          </ul>
+
+          <ul>
+            <li onmouseover="jump1(this)" class=" btn-link" data-toggle="collapse" data-target="#right-collapseSix" aria-expanded="true" aria-controls="right-collapseSix">
+            <img id="svg" src="libs/sprite/other.svg" alt="">
+            Другое</li>
+              <div id="right-collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#right-accordionExample">
+                <!-- <li></li> -->
+              </div>
+          </ul>
+        </div>
+
+        
+         <p id="side-online">ОНЛАЙН ЧАТ</p>
+          <hr>
+
+          <div id="chat">
+            <div class="inner-chat">
+              <div class="media w-100">
+                <img src="https://via.placeholder.com/40" class="mr-3">
+                <div class="media-body">
+                  <hr>
+                  <div class="mt-0 us-name clearfix">
+                    <span class="float-left">Orxan</span>
+                    <span class="float-right">20:21</span>
+                  </div>
+                  <div class="chat-block">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur.
+                    </p>
+                  </div>
+                </div>
+              </div><!-- media -->
+
+              <div class="media w-100">
+                <img src="https://via.placeholder.com/40" class="mr-3">
+                <div class="media-body">
+                  <hr>
+                  <div class="mt-0 us-name clearfix">
+                    <span class="float-left purple">Cookie</span>
+                    <span class="float-right">20:23</span>
+                  </div>
+                  <div class="chat-block">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur.
+                    </p>
+                  </div>
+                </div>
+              </div><!-- media -->
+
+              <div class="media w-100">
+                <img src="https://via.placeholder.com/40" class="mr-3">
+                <div class="media-body">
+                  <hr>
+                  <div class="mt-0 us-name clearfix">
+                    <span class="float-left green">Caiser</span>
+                    <span class="float-right">20:23</span>
+                  </div>
+                  <div class="chat-block">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur.
+                    </p>
+                  </div>
+                </div>
+              </div><!-- media -->
+
+              <div class="media w-100">
+                <img src="https://via.placeholder.com/40" class="mr-3">
+                <div class="media-body">
+                  <hr>
+                  <div class="mt-0 us-name clearfix">
+                    <span class="float-left orange">Ketty</span>
+                    <span class="float-right">20:23</span>
+                  </div>
+                  <div class="chat-block">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur.
+                    </p>
+                  </div>
+                </div>
+              </div><!-- media -->
+            </div>  
+          </div><!-- chat -->
+          <div id="msg-chat">
+            <textarea class="chat-area" placeholder="Написать сообщения "></textarea>
+            <button class="ct-btn-1"><i class="far fa-share-square"></i></button>
+
+            <div id="chat-btn">
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <button class="ct-btn-2 btn btn-secondary"><i class="far fa-smile"></i></button>
+                <button class="ct-btn-3"><i class="fas fa-camera-retro"></i></button>
+              </div>
+            </div>
+          </div> <!-- message-chat -->
+
+              <p id="side-rec">РЕКЛАМА</p>
+             <hr>
+              <div id="rec">
+                <div id="rec-box1">
+                  <span>
+                   <img onmouseover="cotemyrr(this)" src="libs/file/img/profile.jpeg" > 
+                  </span>
+                </div>
+                <div id="rec-box2">
+                  <span class="rec-link">FSOCIETY - <span class="rec-span">Just about the IT world</span></span>
+                </div>
+                <div id="rec-box3">
+                  <p class="rec-text"><i class="far fa-smile"></i> Здесь обитают айтишники, вайтишники, смузиведы, диванные войска и весь АйТишный бомонд</p>
+                  <p class="rec-text2"><a href="">65 415 участников</a></p>
+                  <p class="rec-text3 green"><a>19 октября 2019 в 19:07</a></p>
+                  <span class="rec-text4">Мой опыт заработка на сайте. Это тяжело, но возможно</span>
+                  <p class="rec-text5 green"><a>https://www.youtube.com/watch?v=XjS6-xflDqE</a></p>
+                </div>
+                <div id="rec-box4"></div>
+                <div id="rec-box5"></div>
+             </div>
+
+    </section>
+
+  </div>
+
+
+  <section id="footer">
+	   <div class="row">
+      <div class="col-lg-6">
+       	 <div class="inner-row">
+           <img  src="libs/file/img/Archmage2.png" alt="" width="80" height="80" >
+            <div class="fo">
+             <span class="fo-1">КЛОНДАЙК ПРОГРАММИСТА</span>
+             <span class="fo-2">ПИРАТСКАЯ БУХТА ДЛЯ РАЗРАБОТЧИКОВ</span>
+            </div>
+            <div class="fo-3">
+              Проект «Клондайк Программиста» создан с целью коллекционирования наиболее интересных материалов из различных сфер деятельности. Мы не преследуем цель незаконного распространения материалов, поэтому если Вы являетесь правообладателем, сообщите нам о нарушении по указанным здесь контактам.
+            </div>
+      	  </div>
+      </div>
+        </div>
+   	<div class="footer-down">
+ 			<p>
+     		<span>© 2019. Автор проекта:</span> <span class="text-info">Orxan Shirinov</span> <strong>mad26112013@gmail.com</strong>
+    	</p>
+   	</div>
+  </section>
+
+
+
+
+
+<script src="libs/js/jquery.js"></script>
+<script src="libs/js/bootstrap.min.js"></script>
+<script src="libs/js/sound.js"></script>
+<script src="libs/js/main.js"></script>
+
+	
+</body>
+</html>

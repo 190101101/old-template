@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed&display=swap');
+#all{
+	max-width: 1500px;
+	margin: 0 auto;
+}
+
+body ::selection {
+	background: #FF9B00 !important;
+	color: #009BFF !important;
+}
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: consolas;
+	overflow-x: hidden;
+	background: #121416 !important;
+	color: #fff !important;
+	/**/
+	cursor: url('http://www.rw-designer.com/cursor-extern.php?id=1839'), auto !important;
+	cursor: url('http://www.rw-designer.com/cursor-extern.php?id=1839'), n-resize !important;
+	cursor: url('http://www.rw-designer.com/cursor-extern.php?id=1839'), ne-resize !important;
+	cursor: url('http://www.rw-designer.com/cursor-extern.php?id=1839'), e-resize !important;
+	cursor: url('http://www.rw-designer.com/cursor-extern.php?id=1839'), se-resize !important;
+	cursor: url('http://www.rw-designer.com/cursor-extern.php?id=1839'), s-resize !important;
+	/**/
+}
+
+body.no-scroll{
+	overflow:hidden;
+}
+
+.no-scroll-body{
+	overflow:hidden;
+}
+
+body::-webkit-scrollbar {
+   width: 15px;
+}
+
+body::-webkit-scrollbar-track{
+   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+
+body::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to  top, #000000, #2f2e2e, #5a5958, #8a8886, #bbbbb8);
+  outline: 1px solid slategrey;
+}
+
+ul, li, a{
+	text-decoration: none !important;
+	list-style: none !important;
+}
+
+
+#sidebar::-webkit-scrollbar {
+   width: 15px;
+}
+
+#sidebar::-webkit-scrollbar-track{
+   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+
+#sidebar::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to  top, #000000, #2f2e2e, #5a5958, #8a8886, #bbbbb8);
+  outline: 1px solid slategrey;
+}
+
+section{
+	position: relative;
+	width: 100%;
+   transition: all 150ms linear;
+}
+
+#footer{
+	position: relative;
+	width: 100%;
+    transition: all 150ms linear;
+}
+
+.footer{
+	position: relative;
+	width: 100%;
+    transition: all 150ms linear;
+}
+
+#navbar{
+	position: relative;
+    transition: all 150ms linear;
+}
+
+
+.active#sidebar{
+	left: 0px;
+    transition: all 150ms linear;
+}
+
+.active#section{
+	margin-left: 370px;
+    transition: all 150ms linear;
+}
+
+.active#footer{
+	margin-left: 370px;
+    transition: all 150ms linear;
+}
+
+.active.footer{
+	margin-left: 370px;
+    transition: all 150ms linear;
+}
+
+.active#pagination{
+	margin-left: 370px;
+    transition: all 150ms linear;
+}
+
+.active#navbar{
+	margin-left: 370px;
+    transition: all 150ms linear;
+}
+
+
+#sidebar{
+	overflow-x: hidden;
+	position: fixed;
+	z-index: 102;
+	width: 370px;
+	height: 100%;
+	background-color: #1f2326;
+    transition: all 150ms linear;
+	left: -370px; 
+ 	overflow-y: scroll;
+	margin-top: -80px;
+}
+
+#sidebar ul{
+	padding: 0;
+	margin: 0;
+}
+
+#sidebar ul li{
+	color: #fff;
+	list-style: none;
+	padding: 10px 10px;
+	background-color: #22242A;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	font-size: 18px;
+	transition: color .3s linear;
+	padding-left: 20px;
+
+}
+
+#sidebar ul li:hover{
+	background-color: #111516;
+	color: #FF9B00;
+	cursor: pointer;
+	transition: color .3s linear;
+}
+
+#sidebar .nav-item {
+	color: #fff;
+	text-transform: uppercase;
+	padding-left: 20px;
+	transition: color .2s linear;
+	font-size: 14px;
+
+}
+
+
+#sidebar .nav-item .float-right{
+	font-size: 12px;
+	opacity: .7;
+	color: #ccc;
+	transition: color .2s linear;
+}
+
+#sidebar .nav-item:hover .float-right{
+	color: #FF9B00 !important;
+	transition: color .2s linear;
+}
+
+#sidebar .nav-item:hover{
+	background-color: #111516;
+	color: #FF9B00 !important;
+	transition: color .2s linear;
+}
+
+#sidebar ul li .k{
+	color: #8ac832;
+}
+
+#sidebar li .span{
+	width: 15px;
+	height: 15px;
+	background-color: #2E3139;
+	position: absolute;
+	border-radius: 50%;
+	right: 20px;
+	transition: background-color .2s linear;
+}
+
+#sidebar ul li:hover .span{
+	background-color: #FF6400 !important;
+	transition: background-color .2s linear;
+
+}
+
+#sidebar .toggle-btn{
+	z-index: 102;
+	position: fixed;
+	left: 20px;
+	bottom: 20px;
+}
+
+#online{
+	margin-top: 20px;
+}
+
+#online thead tr th{
+	padding-left: 20px;
+}
+
+#online tbody tr td{
+	padding-left: 20px;
+}
+
+#online thead{
+	font-size: 20px;
+}
+
+#online tbody{
+	font-size: 10px;
+}
+
+
+#online .text-muted{
+	font-size: 11px;
+}
+
+.table-dw{
+	color: #0064FF;
+}.table-fl{
+	color: #FF9000;
+}.table-on{
+	color: #02AA0A;
+}
+
+
+/*===*/
+
+#category {
+	margin-top: 30px;
+	margin-left: 20px;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	font-weight: bold;
+	font-size: 26px;
+	color: #fff;
+	line-height: 10px;
+}
+
+
+#category hr{
+	width: 30%;
+	height: 3px;
+	background-image: linear-gradient(to right , #ffd300, #f8aa00, #ec8200, #dc5800, #c6270d);
+}
+
+.side-searchbox{
+	margin-left: 10px;
+	width: 290px;
+	height: 35px;
+	border-radius: 3px;
+	background-color: #121416;
+	border: 2px solid black;
+	padding: 22px 7px;
+	color: #fff;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	font-size: 19px;
+}
+
+.side-searchbox::placeholder{
+	padding: 23px 10px;
+	color: grey;
+}
+
+
+
+#side-search{
+	margin-top: 40px;
+	margin-left: 20px;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	font-weight: bold;
+	font-size: 25px;
+	color: #fff;
+	line-height: 10px;
+	opacity: .7;
+}
+
+#search i{
+	font-size: 20px;
+	color: #ccc;
+	opacity: .7;
+}
+
+#search-2 button{
+	border-radius: 3px;
+	margin: 0;
+	padding: 10px;
+	border: 2px solid #000000;
+	background: #121416;
+
+}
+
+#search-2 i{
+	font-size: 20px;
+	color: #ccc;
+	opacity: .7;
+}
+
+#side-search ~ hr{
+	margin-left: 20px;
+	width: 17%;
+	height: 3px;
+	background-image: linear-gradient(to right , #ffd300, #f8aa00, #ec8200, #dc5800, #c6270d);
+}
+
+
+.s{
+	width: 260px;
+	line-height: 15px;
+}
+
+.s-1{
+	transition: color .3s linear;
+	font-size: 22px;
+	width: 245px;
+	color: white;
+	font-family: consolas;
+	font-weight: bold;
+}
+
+.s-1:hover{
+	transition: color .3s linear;
+	color: #FF6400 !important;
+}
+
+.s-2{
+	font-size: 14px;
+	color: white;
+	opacity: .6;
+	font-family: consolas;
+	font-weight: bold;
+}
+
+#content{
+	width: 100% !important;
+}
+
+#content h3{
+	font-family: 'Ubuntu Condensed', sans-serif;
+	font-size: 35px;
+	color: #ccc;
+	line-height: 10px;
+}
+
+#content .hr{
+  width: 23%;
+  height: 3px;
+  background-image: linear-gradient(to right , #ffd300, #f8aa00, #ec8200, #dc5800, #c6270d);
+}
+
+#navbar{
+	width: 100% !important;
+	box-shadow: 1px 20px 100px #0A0B0D;
+	z-index: 200;
+}
+
+
+.bg-navbar{
+	background: #0A0B0D !important;
+}
+
+
+.navbar-nav .nav-link{
+	vertical-align: top;
+	color: #A8A0A0 !important;
+	font-size: 18px;
+	transition:  color .3s linear;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	font-weight: bold;
+	position: relative;
+}
+
+.navbar-nav .nav-link:hover{
+	color: #8ac832 !important;
+	transition:  color .3s linear;
+}
+
+.navbar-nav li {
+	padding: 0px 5px;
+	text-transform: uppercase;
+}
+
+
+.navbar-nav .nav-link:after{
+	content: "";
+	width: 100%;
+	height: 3px;
+	top: 100%;
+	position: absolute;
+	left: 0;
+	z-index: 1;
+	background-color: #8ac832;
+	transition: opacity .7s linear;
+	opacity: 0;
+}
+
+
+.navbar-nav .nav-link:hover:after{
+	opacity: 1;
+	transition: opacity .7s linear;
+}
+
+
+.navbar img{
+	box-shadow: 1px 1px 10px 3px red;
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	transition: .3s;
+}
+
+.navbar img:hover{
+	box-shadow: 1px 1px 10px 6px red;
+	transform: scale(1.3);
+	transition: .3s;
+}
+
+form .search{
+	transition: border .2s linear;
+}
+
+form .search:hover{
+	box-shadow: 1px 1px 10px 1px #FF4E00;
+	border: 2px solid #FF4E00;
+	transition: border .2s linear;
+}
+
+form .search:focus{
+	color: #FF4E00 !important;
+	border: 2px solid #FF4E00;
+	transition: color .2s linear;
+	box-shadow: 1px 1px 10px 1px #FF4E00;
+	transition: box-shadow .2s linear;
+}
+
+form .search:hover .search::placeholder{
+	color: red !important;
+}
+
+form .search::placeholder{
+	color: #FF4E00 !important;
+	transition: color .2s linear;
+}
+
+.searchbox-side{
+	width: 280px;
+	height: 37px;
+	border-radius: 3px;
+	background-color: #121416;
+	border: 2px solid black;
+	padding: 5px 5px;
+	color: #fff;
+	font-family: consolas;
+	margin-left: 20px;
+}
+
+#search form button{
+	transition: border .2s linear;
+}
+
+#search form button:hover{
+	box-shadow: 1px 1px 10px 1px #FF4E00;
+	border: 2px solid #FF4E00;
+	transition: border .2s linear;
+}
+
+

@@ -1,0 +1,124 @@
+@media screen and (max-width: 992px ) {
+
+
+	#pagination{
+		margin: 50px 0px;
+	}
+
+	#pagination #pag-div{
+		margin: 0 auto;
+		width: 430px;
+		height: 60px;
+		text-align: center;
+		line-height: 54px;
+		border: 2px solid #000;
+		margin-left: 85px;
+		z-index: 100;
+		position: relative;
+		top: 60px;
+		background-color: #171A20 !important;
+		border-right: #171A20;
+
+	}
+
+
+	#pagination .p-first-col #pag-div a:last-child{
+		transform: skewX(-25deg);
+		width: 20px;
+		height: 100%;
+		position: absolute;
+		right: -14px;
+		border: none;
+		background-image: linear-gradient(to right top, #171A20, #171A20, #171A20, #171A20, #171A20);
+	    border-right: 2px solid #456789;
+	    z-index: -10;
+	}
+
+
+
+	#pagination ul a{
+		font-size: 15px;
+		border-radius: 3px;
+		padding: 7px 13px;
+		background-image: linear-gradient(to right top, #212046, #131e3a, #0b1a2c, #09141e, #080c0f);
+		text-align: center;
+		transition: color .2s linear;
+		color: #fff;
+		font-family: consolas;
+		border: 2px solid #000;
+	}
+
+
+	#pagination ul a:first-child{
+		padding: 7px 5px;
+		color: green;
+	}
+
+	.margin-active{
+	    transition: all 400ms linear;
+		margin-left: -210px;
+	}
+
+	.p-first-col{
+	    transition: all 200ms linear;
+
+	}
+
+
+.absolute{
+	width: 300px;
+	cursor: pointer;
+	margin-left: 490px;
+}
+
+
+	#pagination #pag-div-2{
+		margin-left: -265px !important;
+		z-index: 10;
+		position: absolute;
+		border-radius: 3px;
+		margin: 0 auto;
+		background-color: #080C0F !important;
+		width: 440px;
+		height: 60px;
+		text-align: center;
+		line-height: 54px;
+		border: 2px solid #000;
+	}
+
+
+#pagination #pag-div-2 ul a{
+	font-size: 13px;
+	border-radius: 3px;
+	padding: 9px 10px;
+
+}
+
+
+#pagination .container .row .block{
+	width: 165px;
+	height: 80px;
+	position: absolute;
+	top: 48px;
+	left: 0px;
+	background-color: #121416;
+	z-index: 101;
+} 
+
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+	#pagination .container .row .block{
+		width:100px;
+		height: 80px;
+		position: absolute;
+		top: 48px;
+		left: 0px;
+		background-color: #121416;
+		z-index: 101;
+	} 
+
+}

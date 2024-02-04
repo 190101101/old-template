@@ -1,0 +1,52 @@
+body{
+	background: #05142A;
+	color: #fff ;
+	font-family: 'consolas';
+	overflow-x: hidden;
+	margin: 0;
+}
+
+*:before,
+*:after,
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	transition: all .3s;
+}
+
+
+.container{
+	background: #235234;
+	width: 400px;
+	height: 400px;
+	margin: 50px auto 0;
+	border: 1px solid #234232;
+	border-radius: 10px;
+
+}
+
+.items{
+	border-radius: 10px;
+	padding: 10px;
+	color: #fff;
+}
+
+.item1{background: orangered;}
+.item2{background: yellowgreen;}
+.item3{background: mediumpurple;}
+.item4{background: hotpink;}
+.item5{background: royalblue;}
+.item6{background: orangered;}
+.item7{background: yellowgreen;}
+.item8{background: mediumpurple;}
+.item9{background: hotpink;}
+
+
+
+
+
+
+
+
+

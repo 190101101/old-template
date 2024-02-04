@@ -1,0 +1,110 @@
+@media screen and (max-width: 960px){
+	
+	.navbar{
+		display: grid;
+		grid-template-columns:  0px 1fr;
+		grid-template-areas:
+		 "logo title button"
+		 "menu menu menu";
+	}
+	
+	.navbar img{
+		grid-area: logo;
+	}
+
+	.navbar .btn{
+		grid-area: btn;
+		position: fixed;
+		color: red;
+		display: block;
+		top: 20px;
+		right: 20px;
+	}
+	
+	.title{
+		text-align: center;
+	}
+
+
+	.navbar .menu{
+		text-align: center;
+		line-height: 5px;
+		display: flex;
+		flex-direction: column;
+		grid-area: menu;
+	}
+
+	.navbar .menu li{
+		margin: 10px;
+	}
+
+	.panel {
+	  max-height: 0;
+	  overflow: hidden;
+	  transition: max-height 0.2s ease-out;
+	}
+
+}
+
+
+
+@media screen and (max-width: 499px){
+	
+	.navbar{
+		display: grid;
+		grid-template-areas: 
+		"logo logo logo logo logo"
+		"title title title title title"
+		"menu menu menu menu menu";
+	}
+
+	.title{
+		grid-area: title;
+	}
+
+	.logo{
+		margin-top: 10px;
+		grid-area: logo;
+		display: flex;
+		justify-content: center;
+	}
+	.btn{
+		grid-area: btn;
+	}
+	
+	.menu{
+		position: relative;
+		left: -18px;
+	}
+
+
+}
+
+
+
+@media screen and (min-width: 1330px){
+		
+		
+
+
+	.sidebar{
+		background: #213123;
+		width: 300px;
+		order: 1;
+		margin-left: 0px;
+		height: 100%;
+	}
+
+	.content .toggle-btn{
+		display: none;
+	}
+
+}
+
+
+
+@media screen and (max-width: 1280px){
+	.searchbox{
+		display: none;
+	}
+}
